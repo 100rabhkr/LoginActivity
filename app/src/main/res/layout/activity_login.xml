@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.dezlumid.Login">
+
+    <TextView
+        android:text="Please Enter Your Credentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLabe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee ID"
+        android:layout_below="@+id/textViewLabe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textViewEid"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/login"
+        android:hint="Enter user id"
+        android:layout_alignBaseline="@+id/textViewEid"
+        android:layout_alignBottom="@+id/textViewEid"
+        android:layout_toRightOf="@+id/textViewEid"
+        android:layout_toEndOf="@+id/textViewEid"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_border_edittext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textViewpass"
+        android:textSize="15sp"
+        android:layout_below="@+id/textViewEid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="33dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Enter Pin"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_border_edittext"
+        android:layout_alignBaseline="@+id/textViewpass"
+        android:layout_alignBottom="@+id/textViewpass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/textViewpass"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:text="Get In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:layout_centerInParent="true"
+        android:onClick="loginButton"/>
+
+
+</RelativeLayout>
